@@ -19,10 +19,10 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-### 🎲 Rodando o Front End (servidor)
+### 🎲 Rodando o Front End
 
 ```bash
-- git clone <link-repositório> - (clone do repositório)
+- git clone <https://github.com/Leandro-Patricio/Portfolio> - (clone do repositório)
 - cd <diretório> - (acesso ao diretório)
 - npm install - (instalação das dependências)
 - npm start - (execução do projeto)
