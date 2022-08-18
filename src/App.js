@@ -4,9 +4,7 @@ import Aos from "aos";
 
 function App() {
   Aos.init();
-  return (
-    <Router />
-  );
+  return <Router />;
 }
 
 export default App;

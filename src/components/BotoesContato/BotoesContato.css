@@ -1,0 +1,12 @@
+.botaoContato {
+  margin: 0 1vw;
+  transition: all 0.5s ease-in-out;
+}
+
+.botaoContato:hover {
+  transform: rotate(360deg);
+}
+
+/* .botaoContato:hover #imagemBotao {
+  fill: orange;
+} */
