@@ -17,7 +17,14 @@ const Diario = () => {
                         </button>
                     </Link>
 
-
+                    <p>
+                        Dia 5:
+                        Google Fonts
+                    </p>
+                    <p>
+                        Dia 4:
+                        Descobrindo typewriterjs (efeito de escrita)
+                    </p>
                     <p>
                         Dia 3:
                         Descobrindo AOS (animation on scroll)

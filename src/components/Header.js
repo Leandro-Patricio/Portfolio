@@ -7,8 +7,8 @@ const header =()=>{
     const header={
         backgroundColor:"black",
         color:"white",
-        display:"flex",
-        justifyContent:"space-between",
+/*         display:"flex",
+        justifyContent:"space-between", */
         padding:"5vh 5vw",
         position:"sticky",
         top:"0"
@@ -46,17 +46,16 @@ const inside={
         
         <header style={header} id="laEmCima">
 
-        <div style={primeiroContainer}>
+{/*         <div style={primeiroContainer}>
         <div>
         <a onClick={()=>animateScroll.scrollToTop()} href={() => false}
-   /*      onMouseEnter={()=>onMouseEnter} */
         >
             LFP
         </a>
         <br/>
             
         </div>
-        </div>
+        </div> */}
 
         <div style={segundoContainer}>
         <div style={inside}>
