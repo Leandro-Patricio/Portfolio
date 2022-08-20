@@ -1,20 +1,38 @@
 .cabecalho {
   color: white;
-  padding: 5vh 5vw;
+  /*   padding: 3vh 3vw; */
   position: sticky;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  background-color: black;
 }
 
 .insideCabecalho {
-  margin-right: 2vw;
+  margin: 0 2vw;
+  padding: 3vh 0vw;
   text-decoration: none;
   color: white;
 }
 
 .insideCabecalho:hover {
   cursor: pointer;
+  animation-name: tremer;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes tremer {
+  25% {
+    rotate: 10deg;
+  }
+  50% {
+    rotate: -10deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
 }

@@ -1,5 +1,19 @@
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   .fotoLeandro {
     display: none;
   }
+}
+
+.fotoLeandro {
+  /*   width: 50px; */
+  height: 500px;
+  margin: 2vh 5vw 2vh 0;
+}
+
+.tituloSobre {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 30px 0 0 0;
+  font-size: 40px;
+  margin: 0;
 }

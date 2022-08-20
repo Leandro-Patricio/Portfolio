@@ -1,7 +1,7 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-scroll";
-import corpoInteiroOval from "../../fig/corpo_inteiro_oval.png";
+import corpoInteiroOval from "../../fig/corpo_inteiro_com_jade_oval.png";
 import "./Sobre.css";
 
 const Sobre = () => {
@@ -12,8 +12,20 @@ const Sobre = () => {
         backgroundImage: "linear-gradient(#0063a4, black)",
       }}
     >
+      <h1
+        name="sobre"
+        id="sobre"
+        className="tituloSobre"
+        data-aos="fade-down"
+        data-aos-duration="3000"
+      >
+        Sobre
+      </h1>
+
       <div style={{ display: "flex", alignItems: "center" }}>
         <div
+          data-aos="fade-right"
+          data-aos-duration="3000"
           style={{
             margin: "5vh 5vw 5vh 5vw",
             textAlign: "justify",
@@ -46,7 +58,7 @@ const Sobre = () => {
           </p>
         </div>
 
-        <div>
+        <div data-aos="fade-left" data-aos-duration="3000">
           <img
             alt="Foto do Leandro"
             src={corpoInteiroOval}

@@ -1,12 +1,21 @@
 .botaoContato {
   margin: 0 1vw;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 .botaoContato:hover {
   transform: rotate(360deg);
 }
 
-/* .botaoContato:hover #imagemBotao {
-  fill: orange;
-} */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 8% 0% 0 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    margin: 10% 0 7% 0;
+  }
+}

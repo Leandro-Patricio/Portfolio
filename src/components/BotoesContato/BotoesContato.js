@@ -2,14 +2,7 @@ import "./BotoesContato.css";
 
 const BotoesContato = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "center",
-        margin: "10% 0 7% 0",
-      }}
-    >
+    <div className="container">
       {/* linkedin */}
       <a
         href="https://www.linkedin.com/in/leandro-patrico/"

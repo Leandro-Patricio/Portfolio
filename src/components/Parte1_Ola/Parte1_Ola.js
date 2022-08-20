@@ -1,25 +1,19 @@
 import Typewriter from "typewriter-effect";
 import { Link, scrollSpy } from "react-scroll";
-import BotoesContato from "./BotoesContato/BotoesContato";
+import BotoesContato from "../BotoesContato/BotoesContato";
+import Header from "../Header/Header.js";
 
-const Inicio = () => {
+import "./Parte1_Ola.css";
+
+const Parte1_Ola = () => {
   scrollSpy.update();
   return (
     <section>
-      <div
-        className={"fontePacifico"}
-        style={{
-          margin: "7% 0 0 0%",
-          fontSize: "15px",
-          textAlign: "center",
-        }}
-      >
-        Bem-vindo a página de <br /> <br />
+      <div className="fontePacifico containerInicial">
+        Bem-vindo à página de <br /> <br />
         <span className={"fonteRighteous nomePrincipal"}>
-          {" "}
-          Leandro Fernandes Patrício{" "}
+          Leandro Fernandes <br /> Patrício
         </span>
-        {/* <br/> e sou<br/> */}
         <div style={{ fontSize: "30px" }}>
           <Typewriter
             options={{ delay: 50, cursor: "|", deleteSpeed: 50, loop: true }}
@@ -52,9 +46,6 @@ const Inicio = () => {
         </div>
       </div>
 
-      <br />
-      <br />
-      <br />
       <BotoesContato />
 
       <div>
@@ -89,4 +80,4 @@ const Inicio = () => {
   );
 };
 
-export default Inicio;
+export default Parte1_Ola;
