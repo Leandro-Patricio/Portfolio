@@ -1,14 +1,24 @@
 import Typewriter from "typewriter-effect";
+import { Link, scrollSpy } from "react-scroll";
+import BotoesContato from "./BotoesContato/BotoesContato";
 
 const Inicio = () => {
+  scrollSpy.update();
   return (
     <section>
       <div
-        style={{ margin: "7% 0 0 0%", fontSize: "15px", textAlign: "center" }}
         className={"fontePacifico"}
+        style={{
+          margin: "7% 0 0 0%",
+          fontSize: "15px",
+          textAlign: "center",
+        }}
       >
         Bem-vindo a página de <br /> <br />
-        <span className={"fonteRighteous"}> Leandro Fernandes Patrício </span>
+        <span className={"fonteRighteous nomePrincipal"}>
+          {" "}
+          Leandro Fernandes Patrício{" "}
+        </span>
         {/* <br/> e sou<br/> */}
         <div style={{ fontSize: "30px" }}>
           <Typewriter
@@ -16,7 +26,7 @@ const Inicio = () => {
             onInit={(typewriter) => {
               typewriter
                 .typeString(
-                  `<span class='fonteSilkscreen font-effect-shadow-multiple'>Desenvolvedor Full Stack</span>`
+                  `<span class='fonteSilkscreen font-effect-shadow-multiple'>Dev. Full Stack</span>`
                 )
                 .pauseFor(1500)
                 .deleteChars(10)
@@ -25,21 +35,55 @@ const Inicio = () => {
                 )
                 .pauseFor(1500)
                 .changeDeleteSpeed(10)
-                .deleteChars(23)
+                .deleteChars(14)
                 .typeString(
-                  `<span class='fonteAkayaTelivigala font-effect-shadow-multiple'>Oceanógrafo</span>`
+                  `<span class='fonteAkayaTelivigala font-effect-shadow-multiple'>M.Sc. em Oceanografia</span>`
                 )
                 .pauseFor(1500)
-                .deleteChars(11)
+                .deleteChars(21)
                 .typeString(
-                  `<span class='fonteAkayaTelivigala font-effect-shadow-multiple'>Mestre em Oceanografia Biológica</span>`
+                  `<span class='fonteAkayaTelivigala font-effect-shadow-multiple'>Oceanografia Pesqueira</span>`
                 )
                 .pauseFor(1500)
-                .deleteChars(32)
+                .deleteChars(22)
                 .start();
             }}
           />
         </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <BotoesContato />
+
+      <div>
+        <Link to="sobre" smooth spy={true} hashSpy={true}>
+          <div
+            style={{
+              textAlign: "center",
+              padding: "5vw 0",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "white",
+            }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="36"
+              height="36"
+            >
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8zm1-8h3l-4 4-4-4h3V8h2v4z"
+                fill="rgba(255,255,255,1)"
+              />
+            </svg>
+            Mergulhe mais fundo
+          </div>
+        </Link>
       </div>
     </section>
   );

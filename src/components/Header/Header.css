@@ -1,0 +1,20 @@
+.cabecalho {
+  color: white;
+  padding: 5vh 5vw;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.insideCabecalho {
+  margin-right: 2vw;
+  text-decoration: none;
+  color: white;
+}
+
+.insideCabecalho:hover {
+  cursor: pointer;
+}

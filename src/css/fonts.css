@@ -1,29 +1,42 @@
-@import url('https://fonts.googleapis.com/css?family=Silkscreen&effect=shadow-multiple');
-.fonteSilkscreen{
-    font-family: 'Silkscreen';
-    font-size: 30px;
+@import url("https://fonts.googleapis.com/css?family=Silkscreen&effect=shadow-multiple");
+.fonteSilkscreen {
+  font-family: "Silkscreen";
+  font-size: 30px;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Dancing+Script:b&effect=outline');
-.fonteTheNautigal{
-    font-family: 'Dancing Script';
-    font-size: 20px;
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:b&effect=outline");
+.fonteTheNautigal {
+  font-family: "Dancing Script";
+  font-size: 20px;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Akaya+Telivigala&effect=shadow-multiple');
-.fonteAkayaTelivigala{
-    font-family: 'Akaya Telivigala';
-    font-size: 30px;
+@import url("https://fonts.googleapis.com/css?family=Akaya+Telivigala&effect=shadow-multiple");
+.fonteAkayaTelivigala {
+  font-family: "Akaya Telivigala";
+  font-size: 30px;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
-.fontePacifico{
-    font-family: 'Abril Fatface';
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
+.fontePacifico {
+  font-family: "Abril Fatface";
+  font-size: 40px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Righteous");
+.fonteRighteous {
+  font-family: "Righteous";
+  font-size: 80px;
+}
+
+@media screen and (max-width: 500px) {
+  .fonteRighteous {
     font-size: 40px;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Righteous');
-.fonteRighteous{
-    font-family: 'Righteous';
-    font-size: 80px;
+  }
+  .fontePacifico {
+    font-size: 30px;
+  }
+  .fonteAkayaTelivigala,
+  .fonteSilkscreen {
+    font-size: 20px;
+  }
 }
