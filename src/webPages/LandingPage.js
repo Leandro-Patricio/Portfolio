@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Parte1_Ola from "../components/Parte1_Ola/Parte1_Ola";
 import Sobre from "../components/Sobre/Sobre";
 import Header from "../components/Header/Header";
+import Parte3_AreaDeInteresse from "../components/Parte3_AreaDeInteresse/Parte3_AreaDeInteresse";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -34,6 +35,7 @@ const LandingPage = () => {
       </Link>
       <Parte1_Ola />
       <Sobre />
+      <Parte3_AreaDeInteresse />
 
       <div name="formacaoAcademica" id="formacaoAcademica">
         Formação acadêmica
@@ -48,86 +50,6 @@ const LandingPage = () => {
         to aqui embaixo
       </div>
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <Footer />
     </div>
   );

@@ -1,0 +1,35 @@
+.secAreaDeInteresse {
+  background-color: black;
+  color: white;
+}
+
+.subTitulo {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 20vh 0 0 0;
+  font-size: 40px;
+  margin: 0;
+}
+
+.containerInteressePrincipal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+}
+
+.interessePrincipal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.7s ease-in-out;
+}
+.imagemProgramador:hover {
+  width: 500px;
+}
+.imagemProgramador {
+  width: 300px;
+  transition: all 0.7s ease-in-out;
+}

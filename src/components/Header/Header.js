@@ -13,6 +13,12 @@ const header = () => {
       </div>
 
       <div className="insideCabecalho">
+        <Link to="areaDeInteresse" smooth spy={true} hashSpy={true}>
+          Área de Interesse
+        </Link>
+      </div>
+
+      <div className="insideCabecalho">
         <Link to="formacaoAcademica" smooth spy={true} hashSpy={true}>
           Formação acadêmica
         </Link>
