@@ -27,6 +27,7 @@ const LandingPage = () => {
           /*           https://cff2.earth.com/uploads/2005/09/27011951/this-bottom-dwelling-fish-usually-moves-across-the-ocean-floor-crawling-on-a-pair-of-modified-pectoral-fins.jpg */
           /* https://images.squarespace-cdn.com/content/v1/5b43ad1f25bf025e1bd093da/1539520647833-376J0I14UWJIECVHRRJY/GOPR2367.JPG         */
           src="https://cff2.earth.com/uploads/2005/09/27011951/this-bottom-dwelling-fish-usually-moves-across-the-ocean-floor-crawling-on-a-pair-of-modified-pectoral-fins.jpg"
+          alt="imagem de fundo"
           style={{}}
         />
       </div>

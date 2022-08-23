@@ -1,7 +1,15 @@
-@media screen and (max-width: 900px) {
-  .fotoLeandro {
-    display: none;
-  }
+.containerSobre {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  text-justify: inter-word;
+  text-indent: 25px;
+  color: rgb(255, 255, 255, 0.8);
+  font-size: 20px;
+}
+
+.containerSobre a {
+  color: rgb(255, 255, 255, 0.8);
 }
 
 .fotoLeandro {
@@ -16,4 +24,16 @@
   padding: 30px 0 0 0;
   font-size: 40px;
   margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .fotoLeandro {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .containerSobre {
+    font-size: 15px;
+  }
 }

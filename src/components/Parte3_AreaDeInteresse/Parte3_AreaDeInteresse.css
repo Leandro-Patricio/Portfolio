@@ -16,6 +16,7 @@
   justify-content: space-around;
   align-items: center;
   height: 500px;
+  transition: all 0.7s ease-in-out;
 }
 
 .interessePrincipal {
@@ -26,10 +27,46 @@
   align-items: center;
   transition: all 0.7s ease-in-out;
 }
-.imagemProgramador:hover {
-  width: 500px;
-}
-.imagemProgramador {
-  width: 300px;
+
+.imagemInteressePrincipal {
   transition: all 0.7s ease-in-out;
+}
+
+.imagemProgramador {
+  width: 400px;
+}
+
+.imagemProgramador:hover {
+  width: 600px;
+}
+
+.imagemOceanografia {
+  width: 300px;
+}
+
+.imagemOceanografia:hover {
+  width: 450px;
+}
+
+@media screen and (max-width: 800px) {
+  .containerInteressePrincipal {
+    height: 200px;
+  }
+
+  .imagemProgramador {
+    width: 100px;
+  }
+  .imagemProgramador:hover {
+    width: 130px;
+  }
+  .imagemOceanografia {
+    width: 80px;
+  }
+  .imagemOceanografia:hover {
+    width: 100px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
 }

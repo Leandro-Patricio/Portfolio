@@ -12,16 +12,16 @@ const Parte3_AreaDeInteresse = () => {
         data-aos="fade-down"
         data-aos-duration="3000"
       >
-        Área de Interesse
+        Áreas de Interesse
       </h1>
 
       <div className="containerInteressePrincipal">
         <div className="interessePrincipal">
-          <h2> Desenvolvedor Web</h2>
+          <h2 style={{ textAlign: "center" }}> Desenvolvedor Web</h2>
           <img
             alt="programador"
             src={imgProgramador}
-            className="imagemProgramador"
+            className="imagemInteressePrincipal imagemProgramador"
           />
         </div>
 
@@ -31,7 +31,7 @@ const Parte3_AreaDeInteresse = () => {
             alt="oceanografia"
             src={imgOceanografia}
             style={{ paddingTop: "-50px" }}
-            className="imagemProgramador"
+            className="imagemInteressePrincipal imagemOceanografia"
           />
         </div>
       </div>
