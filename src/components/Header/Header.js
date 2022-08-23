@@ -17,14 +17,6 @@ const Header = () => {
       /* className="cabecalhoExpandido" */
       id="laEmCima"
     >
-      {/*       <div
-        className="hamburguer"
-        onClick={() => {
-          setIsNavExpanded(!isNavExpanded);
-        }}
-      >
-        Hamburguer
-      </div> */}
       <div
         className="hamburguer"
         id="menu-bar"

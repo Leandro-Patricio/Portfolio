@@ -31,9 +31,9 @@ const LandingPage = () => {
           style={{}}
         />
       </div>
-      <Link to="/diario">
+      {/*       <Link to="/diario">
         <button>Clique aqui para ir ao diário</button>
-      </Link>
+      </Link> */}
       <Parte1_Ola />
       <Sobre />
       <Parte3_AreaDeInteresse />
