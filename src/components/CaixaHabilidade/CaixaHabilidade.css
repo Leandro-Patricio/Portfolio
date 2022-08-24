@@ -1,0 +1,38 @@
+.boxesHabilidades {
+  background-color: gray;
+  padding: 20px;
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 20px;
+}
+.boxesHabilidades:hover {
+  animation-name: tremer;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes tremer {
+  25% {
+    rotate: 10deg;
+  }
+  50% {
+    rotate: -10deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+.imgHabilidade {
+  width: 50px;
+  margin: 5px 0;
+}
+
+.boxesHabilidades:nth-child(3n) {
+  break-after: always;
+}

@@ -1,8 +1,66 @@
+import CaixaHabilidade from "../CaixaHabilidade/CaixaHabilidade";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "./Parte3_AreaDeInteresse.css";
 import imgProgramador from "../../fig/programador_undraw_resize.svg";
 import imgOceanografia from "../../fig/cyborg-bottom-of-the-sea_resize.png";
+import javascript from "../../fig/javascript.png";
+import html from "../../fig/html.png";
+import css from "../../fig/css.png";
+import react from "../../fig/react.png";
+import node from "../../fig/node.png";
+import api from "../../fig/api.png";
+import PostegreSQL from "../../fig/PostegreSQL.png";
+import gitComHub from "../../fig/gitComHub.png";
+import git from "../../fig/git.png";
+import gitHub from "../../fig/gitHub.png";
+import { useState } from "react";
 
 const Parte3_AreaDeInteresse = () => {
+  Aos.init();
+  const [isWebDevOn, setIsWebDevOn] = useState(false);
+  const [isOceanograpfyOn, setIsOceanograpfyOn] = useState(false);
+
+  const entrarHabilidadesWebDev = () => {
+    switch (isWebDevOn) {
+      case false:
+        setIsWebDevOn(!isWebDevOn);
+        setIsOceanograpfyOn(false);
+        document.getElementById("oceanografia").classList.add("saindo");
+        document.getElementById("oceanografia").classList.remove("entrando");
+        document.getElementById("devWeb").classList.remove("saindo");
+        document.getElementById("devWeb").classList.add("entrando");
+
+        break;
+      case true:
+        document.getElementById("devWeb").classList.remove("entrando");
+        document.getElementById("devWeb").classList.add("saindo");
+
+        setIsWebDevOn(!isWebDevOn);
+        setIsOceanograpfyOn(!isOceanograpfyOn);
+        break;
+    }
+  };
+  const entrarHabilidadesOceanografia = () => {
+    switch (isOceanograpfyOn) {
+      case false:
+        setIsOceanograpfyOn(!isOceanograpfyOn);
+        setIsWebDevOn(false);
+        document.getElementById("devWeb").classList.add("saindo");
+        document.getElementById("devWeb").classList.remove("entrando");
+        document.getElementById("oceanografia").classList.remove("saindo");
+        document.getElementById("oceanografia").classList.add("entrando");
+
+        break;
+      case true:
+        document.getElementById("oceanografia").classList.remove("entrando");
+        document.getElementById("oceanografia").classList.add("saindo");
+        setIsOceanograpfyOn(!isOceanograpfyOn);
+        setIsWebDevOn(!isWebDevOn);
+        break;
+    }
+  };
+
   return (
     <section className="secAreaDeInteresse">
       <h1
@@ -12,11 +70,15 @@ const Parte3_AreaDeInteresse = () => {
         data-aos="fade-down"
         data-aos-duration="3000"
       >
-        Áreas de Interesse
+        Habilidades
       </h1>
-
       <div className="containerInteressePrincipal">
-        <div className="interessePrincipal">
+        <div
+          className="interessePrincipal"
+          data-aos="zoom-in-right"
+          data-aos-duration="2000"
+          onClick={() => entrarHabilidadesWebDev()}
+        >
           <h2 style={{ textAlign: "center" }}> Desenvolvedor Web</h2>
           <img
             alt="programador"
@@ -25,7 +87,12 @@ const Parte3_AreaDeInteresse = () => {
           />
         </div>
 
-        <div className="interessePrincipal">
+        <div
+          className="interessePrincipal"
+          data-aos="zoom-in-left"
+          data-aos-duration="2000"
+          onClick={() => entrarHabilidadesOceanografia()}
+        >
           <h2> Oceanografia</h2>
           <img
             alt="oceanografia"
@@ -35,70 +102,37 @@ const Parte3_AreaDeInteresse = () => {
           />
         </div>
       </div>
+      <div className="containerInteresseIndividual" id="devWeb">
+        <CaixaHabilidade linguagem="JavaScript" imagem={javascript} />
+        <CaixaHabilidade linguagem="HTML" imagem={html} />
+        <CaixaHabilidade linguagem="CSS" imagem={css} />
+        <CaixaHabilidade linguagem="React.JS" imagem={react} />
 
-      <div className="containerInteresseIndividual">
-        <div className="computador">
-          <div className="containerInteresseDevWev">
-            <div
-              style={{
-                marginTop: ".2vh",
-                padding: "1vh 3vw",
-                backgroundColor: "orange",
-                width: "70%",
-                textAlign: "center",
-              }}
-            >
-              &lt;Competências /&gt;
-            </div>
-            <div
-              className="insideComputer"
-              style={{ backgroundColor: "orange" }}
-            >
-              HTML
-            </div>
-            <div
-              className="insideComputer"
-              style={{ backgroundColor: "#0B8AB3" }}
-            >
-              CSS
-            </div>
-            <div
-              className="insideComputer"
-              style={{ backgroundColor: "#98BF10" }}
-            >
-              JS
-            </div>
-            <div
-              className="insideComputer"
-              style={{ backgroundColor: "#01E6B3" }}
-            >
-              NODE.JS
-            </div>
-            <div
-              className="insideComputer"
-              style={{ backgroundColor: "#108382" }}
-            >
-              REACT
-            </div>
-            <div
-              className="insideComputer"
-              style={{ backgroundColor: "#6C63FF" }}
-            >
-              SQL
-            </div>
-            <div
-              className="insideComputer"
-              style={{ backgroundColor: "#EACDC7" }}
-            >
-              EXPRESS
-            </div>
-          </div>
-          <div className="peDoPc">
-            <div className="mousepad"></div>
-          </div>
-        </div>
+        <CaixaHabilidade linguagem="Node.JS" imagem={node} />
+        <CaixaHabilidade linguagem="Api REST" imagem={api} />
+        <CaixaHabilidade linguagem="PostegreSQL" imagem={PostegreSQL} />
+        <CaixaHabilidade linguagem="Git" imagem={git} />
+        <CaixaHabilidade linguagem="GitHub" imagem={gitHub} />
+      </div>
+      <div className="containerInteresseIndividual" id="oceanografia">
+        <CaixaHabilidade
+          linguagem="Coisas de Oceanografia"
+          imagem={javascript}
+        />
+        <CaixaHabilidade linguagem="Coisas de Oceanografia" imagem={html} />
+        <CaixaHabilidade linguagem="Coisas de Oceanografia" imagem={css} />
+        <CaixaHabilidade linguagem="Coisas de Oceanografia" imagem={react} />
 
-        <div>dsasadasasdcomputador</div>
+        <CaixaHabilidade linguagem="Coisas de Oceanografia" imagem={node} />
+        <CaixaHabilidade linguagem="Coisas de Oceanografia" imagem={api} />
+        <CaixaHabilidade
+          linguagem="Coisas de Oceanografia"
+          imagem={PostegreSQL}
+        />
+        <CaixaHabilidade
+          linguagem="Coisas de Oceanografia"
+          imagem={gitComHub}
+        />
       </div>
     </section>
   );

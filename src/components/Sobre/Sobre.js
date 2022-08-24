@@ -39,14 +39,14 @@ const Sobre = () => {
           </div>
           <div>
             Seguindo com os estudos, meu mestrado focou na capacidade
-            reprodutiva da
+            reprodutiva da&nbsp;
             <span>
               <a
                 href="https://www.funbio.org.br/em-defesa-da-sardinha/"
                 target="_blank"
                 style={{ textDecoration: "none" }}
               >
-                <u> Sardinha-Verdadeira</u>
+                <u>Sardinha-Verdadeira</u>
               </a>
             </span>
             , o recurso pesqueiro mais importante do Brasil. Para atingir o

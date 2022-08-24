@@ -34,6 +34,7 @@
 
 .imagemProgramador {
   width: 400px;
+  cursor: pointer;
 }
 
 .imagemProgramador:hover {
@@ -42,6 +43,7 @@
 
 .imagemOceanografia {
   width: 300px;
+  cursor: pointer;
 }
 
 .imagemOceanografia:hover {
@@ -71,36 +73,52 @@
   }
 }
 .containerInteresseIndividual {
-  display: flex;
-}
-
-.containerInteresseDevWev {
-  border: 5px solid purple;
-  margin: 1px 1px 1px 50px;
-  width: 300px;
-  color: black;
-
-  display: inline-flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: stretch;
-}
-
-.insideComputer {
-  background-color: white;
-  margin: 1vh 0;
-  padding: 1vh 3vw;
-}
-
-.peDoPc {
-  border: 5px solid purple;
-  background-color: purple;
-  width: 320px;
-  margin: 5px 0 0 40px;
-  display: flex;
+  display: none;
   justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  position: absolute;
 }
-.mousepad {
-  border: 5px solid gray;
-  width: 100px;
+.entrando {
+  display: flex;
+  transition: 2s;
+  left: 10px;
+  animation: entrando 2s forwards;
+}
+
+@keyframes entrando {
+  from {
+    left: -100vw;
+    opacity: 0;
+  }
+  100% {
+    left: 0vw;
+    opacity: 1;
+  }
+}
+
+.saindo {
+  display: flex;
+  transition: 2s;
+  animation: saindo 2s forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes saindo {
+  from {
+    left: 0vw;
+    opacity: 1;
+  }
+  50% {
+    left: 80vw;
+    opacity: 0;
+  }
+  100% {
+    left: 60vw;
+    position: absolute;
+    opacity: 0;
+    display: none;
+  }
+  /*  100% {
+  } */
 }

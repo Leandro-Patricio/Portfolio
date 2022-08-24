@@ -9,6 +9,7 @@ import fundoparte1 from "../fig/fundo_parte1.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "../components/Parte1_Ola/Parte1_Ola.css";
+import Maintenance from "../fig/maintenance.png";
 
 const LandingPage = () => {
   Aos.init();
@@ -37,6 +38,11 @@ const LandingPage = () => {
         to aqui embaixo
       </div>
 
+      <div style={{ textAlign: "center" }}>
+        <img src={Maintenance} atl="Manutenção" />
+        Está página está em manutenção
+        <img src={Maintenance} atl="Manutenção" />
+      </div>
       <Footer />
     </div>
   );
