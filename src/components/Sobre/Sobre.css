@@ -5,7 +5,8 @@
   text-justify: inter-word;
   text-indent: 25px;
   color: rgb(255, 255, 255, 0.8);
-  font-size: 20px;
+  font-size: 25px;
+  line-height: 35px;
 }
 
 .containerSobre a {
@@ -34,6 +35,6 @@
 
 @media screen and (max-width: 500px) {
   .containerSobre {
-    font-size: 15px;
+    font-size: 20px;
   }
 }

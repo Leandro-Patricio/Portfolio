@@ -35,6 +35,71 @@ const Parte3_AreaDeInteresse = () => {
           />
         </div>
       </div>
+
+      <div className="containerInteresseIndividual">
+        <div className="computador">
+          <div className="containerInteresseDevWev">
+            <div
+              style={{
+                marginTop: ".2vh",
+                padding: "1vh 3vw",
+                backgroundColor: "orange",
+                width: "70%",
+                textAlign: "center",
+              }}
+            >
+              &lt;Competências /&gt;
+            </div>
+            <div
+              className="insideComputer"
+              style={{ backgroundColor: "orange" }}
+            >
+              HTML
+            </div>
+            <div
+              className="insideComputer"
+              style={{ backgroundColor: "#0B8AB3" }}
+            >
+              CSS
+            </div>
+            <div
+              className="insideComputer"
+              style={{ backgroundColor: "#98BF10" }}
+            >
+              JS
+            </div>
+            <div
+              className="insideComputer"
+              style={{ backgroundColor: "#01E6B3" }}
+            >
+              NODE.JS
+            </div>
+            <div
+              className="insideComputer"
+              style={{ backgroundColor: "#108382" }}
+            >
+              REACT
+            </div>
+            <div
+              className="insideComputer"
+              style={{ backgroundColor: "#6C63FF" }}
+            >
+              SQL
+            </div>
+            <div
+              className="insideComputer"
+              style={{ backgroundColor: "#EACDC7" }}
+            >
+              EXPRESS
+            </div>
+          </div>
+          <div className="peDoPc">
+            <div className="mousepad"></div>
+          </div>
+        </div>
+
+        <div>dsasadasasdcomputador</div>
+      </div>
     </section>
   );
 };

@@ -9,11 +9,11 @@ const Sobre = () => {
   return (
     <section
       style={{
-        backgroundImage: "linear-gradient(#0063a4, black)",
+        backgroundImage: "linear-gradient(#042E42, black)",
+        /*   #0063a4 */
       }}
     >
       <h1
-        name="sobre"
         id="sobre"
         className="tituloSobre"
         data-aos="fade-down"
@@ -22,11 +22,12 @@ const Sobre = () => {
         Sobre
       </h1>
 
-      <div className="containerSobre" style={{}}>
+      <div className="containerSobre">
         <div
           data-aos="fade-right"
           data-aos-duration="3000"
           style={{ margin: "5vh 5vw 5vh 5vw" }}
+          name="sobre"
         >
           Desde a infância, sempre adorei o mar e as criaturas que nele habitam.
           Sem hesitar, ingressei no instituto de oceanografia da USP.

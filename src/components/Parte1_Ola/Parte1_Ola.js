@@ -48,7 +48,7 @@ const Parte1_Ola = () => {
 
       <BotoesContato />
 
-      <div>
+      {/*       <div>
         <Link to="sobre" smooth spy={true} hashSpy={true}>
           <div
             style={{
@@ -75,7 +75,7 @@ const Parte1_Ola = () => {
             Mergulhe mais fundo
           </div>
         </Link>
-      </div>
+      </div> */}
     </section>
   );
 };

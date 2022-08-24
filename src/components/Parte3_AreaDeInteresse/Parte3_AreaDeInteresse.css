@@ -37,7 +37,7 @@
 }
 
 .imagemProgramador:hover {
-  width: 600px;
+  width: 500px;
 }
 
 .imagemOceanografia {
@@ -45,7 +45,7 @@
 }
 
 .imagemOceanografia:hover {
-  width: 450px;
+  width: 380px;
 }
 
 @media screen and (max-width: 800px) {
@@ -69,4 +69,38 @@
   h2 {
     font-size: 15px;
   }
+}
+.containerInteresseIndividual {
+  display: flex;
+}
+
+.containerInteresseDevWev {
+  border: 5px solid purple;
+  margin: 1px 1px 1px 50px;
+  width: 300px;
+  color: black;
+
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.insideComputer {
+  background-color: white;
+  margin: 1vh 0;
+  padding: 1vh 3vw;
+}
+
+.peDoPc {
+  border: 5px solid purple;
+  background-color: purple;
+  width: 320px;
+  margin: 5px 0 0 40px;
+  display: flex;
+  justify-content: center;
+}
+.mousepad {
+  border: 5px solid gray;
+  width: 100px;
 }

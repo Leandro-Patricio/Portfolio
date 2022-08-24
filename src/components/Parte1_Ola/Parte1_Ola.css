@@ -1,12 +1,17 @@
-@media screen and (max-width: 1000px) {
-  .fotoLeandro {
-    display: none;
-  }
-}
-
 .containerInicial {
-  margin: 100px 0 0 0%;
+  padding: 100px 0 0 0%;
   text-align: center;
   font-size: 20px;
-  color: rgb(255, 255, 255, 0.9);
+  color: rgb(255, 255, 255, 1);
+  -webkit-text-stroke: 1px black;
+}
+
+.imagemDeFundo {
+  /*  "url(https://cff2.earth.com/uploads/2005/09/27011951/this-bottom-dwelling-fish-usually-moves-across-the-ocean-floor-crawling-on-a-pair-of-modified-pectoral-fins.jpg)", */
+
+  /*   background-image: url(../../fig/fundo_parte1_original.jpg); */
+  background-image: url("https://images.news18.com/ibnlive/uploads/2021/12/indias-first-deep-sea-mission.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
