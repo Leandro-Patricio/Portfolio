@@ -5,11 +5,12 @@ import Parte1_Ola from "../components/Parte1_Ola/Parte1_Ola";
 import Sobre from "../components/Sobre/Sobre";
 import Header from "../components/Header/Header";
 import Parte3_AreaDeInteresse from "../components/Parte3_AreaDeInteresse/Parte3_AreaDeInteresse";
-import fundoparte1 from "../fig/fundo_parte1.jpg";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "../components/Parte1_Ola/Parte1_Ola.css";
 import Maintenance from "../fig/maintenance.png";
+import Parte4_Projetos from "../components/Parte4_Projetos/Parte4_Projetos";
 
 const LandingPage = () => {
   Aos.init();
@@ -25,12 +26,7 @@ const LandingPage = () => {
       <Sobre />
       <Parte3_AreaDeInteresse />
 
-      <div name="formacaoAcademica" id="formacaoAcademica">
-        Formação acadêmica
-      </div>
-      <div name="projetos" id="projetos">
-        Projetos
-      </div>
+      <Parte4_Projetos />
       <div name="entreEmContato" id="entreEmContato">
         Entre em contato
       </div>

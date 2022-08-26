@@ -1,0 +1,12 @@
+.secProjetos {
+  background-color: black;
+  color: white;
+}
+
+.subTitulo {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 10vh 0 0 0;
+  font-size: 40px;
+  margin: 0;
+}

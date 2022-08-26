@@ -10,7 +10,6 @@ const Sobre = () => {
     <section
       style={{
         backgroundImage: "linear-gradient(#042E42, black)",
-        /*   #0063a4 */
       }}
     >
       <h1
@@ -26,7 +25,7 @@ const Sobre = () => {
         <div
           data-aos="fade-right"
           data-aos-duration="3000"
-          style={{ margin: "5vh 5vw 5vh 5vw" }}
+          style={{ margin: "5vh 5vw 0vh 5vw" }}
           name="sobre"
         >
           Desde a infância, sempre adorei o mar e as criaturas que nele habitam.

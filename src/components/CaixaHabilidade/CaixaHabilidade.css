@@ -9,6 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
   margin: 20px;
 }
@@ -36,3 +37,15 @@
 .boxesHabilidades:nth-child(3n) {
   break-after: always;
 }
+
+@media screen and (max-width: 530px) {
+  .boxesHabilidades {
+    width: 10vw;
+    height: 10vw;
+    margin: 1vw;
+  }
+  .imgHabilidade {
+    width: 10vw;
+    margin: 5px 0;
+  }
+} ;

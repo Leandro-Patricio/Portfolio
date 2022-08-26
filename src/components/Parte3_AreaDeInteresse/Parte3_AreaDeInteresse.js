@@ -11,65 +11,58 @@ import react from "../../fig/react.png";
 import node from "../../fig/node.png";
 import api from "../../fig/api.png";
 import PostegreSQL from "../../fig/PostegreSQL.png";
-import gitComHub from "../../fig/gitComHub.png";
 import git from "../../fig/git.png";
 import gitHub from "../../fig/gitHub.png";
+
+import coletaDeDados from "../../fig/coletaDeDados.jpg";
+import estatistica from "../../fig/estatistica.png";
+import machineLearning from "../../fig/machineLearning.png";
+import mestrado from "../../fig/mestrado.jpg";
+import microscopia from "../../fig/microscopia.png";
+import oceanografiaPesqueira from "../../fig/oceanografiaPesqueira.png";
+import R from "../../fig/R.png";
+import reproducaoDePeixe from "../../fig/reproducaoDePeixe.jpg";
+import mapa from "../../fig/mapa.png";
+
 import { useState } from "react";
 
 const Parte3_AreaDeInteresse = () => {
   Aos.init();
-  const [isWebDevOn, setIsWebDevOn] = useState(false);
-  const [isOceanograpfyOn, setIsOceanograpfyOn] = useState(false);
+  const [isWebDevOn, setIsWebDevOn] = useState(true);
+  const [isOceanographyOn, setIsOceanographyOn] = useState(false);
 
   const entrarHabilidadesWebDev = () => {
     switch (isWebDevOn) {
       case false:
         setIsWebDevOn(!isWebDevOn);
-        setIsOceanograpfyOn(false);
-        document.getElementById("oceanografia").classList.add("saindo");
-        document.getElementById("oceanografia").classList.remove("entrando");
         document.getElementById("devWeb").classList.remove("saindo");
         document.getElementById("devWeb").classList.add("entrando");
-
         break;
       case true:
         document.getElementById("devWeb").classList.remove("entrando");
         document.getElementById("devWeb").classList.add("saindo");
-
         setIsWebDevOn(!isWebDevOn);
-        setIsOceanograpfyOn(!isOceanograpfyOn);
         break;
     }
   };
   const entrarHabilidadesOceanografia = () => {
-    switch (isOceanograpfyOn) {
+    switch (isOceanographyOn) {
       case false:
-        setIsOceanograpfyOn(!isOceanograpfyOn);
-        setIsWebDevOn(false);
-        document.getElementById("devWeb").classList.add("saindo");
-        document.getElementById("devWeb").classList.remove("entrando");
+        setIsOceanographyOn(!isOceanographyOn);
         document.getElementById("oceanografia").classList.remove("saindo");
         document.getElementById("oceanografia").classList.add("entrando");
-
         break;
       case true:
         document.getElementById("oceanografia").classList.remove("entrando");
         document.getElementById("oceanografia").classList.add("saindo");
-        setIsOceanograpfyOn(!isOceanograpfyOn);
-        setIsWebDevOn(!isWebDevOn);
+        setIsOceanographyOn(!isOceanographyOn);
         break;
     }
   };
 
   return (
     <section className="secAreaDeInteresse">
-      <h1
-        name="areaDeInteresse"
-        id="areaDeInteresse"
-        className="subTitulo"
-        data-aos="fade-down"
-        data-aos-duration="3000"
-      >
+      <h1 className="subTitulo" data-aos="fade-down" data-aos-duration="3000">
         Habilidades
       </h1>
       <div className="containerInteressePrincipal">
@@ -78,6 +71,8 @@ const Parte3_AreaDeInteresse = () => {
           data-aos="zoom-in-right"
           data-aos-duration="2000"
           onClick={() => entrarHabilidadesWebDev()}
+          name="areaDeInteresse"
+          id="areaDeInteresse"
         >
           <h2 style={{ textAlign: "center" }}> Desenvolvedor Web</h2>
           <img
@@ -102,37 +97,45 @@ const Parte3_AreaDeInteresse = () => {
           />
         </div>
       </div>
-      <div className="containerInteresseIndividual" id="devWeb">
-        <CaixaHabilidade linguagem="JavaScript" imagem={javascript} />
-        <CaixaHabilidade linguagem="HTML" imagem={html} />
-        <CaixaHabilidade linguagem="CSS" imagem={css} />
-        <CaixaHabilidade linguagem="React.JS" imagem={react} />
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <div className="containerInteresseIndividual entrando" id="devWeb">
+          <CaixaHabilidade linguagem="JavaScript" imagem={javascript} />
+          <CaixaHabilidade linguagem="HTML" imagem={html} />
+          <CaixaHabilidade linguagem="CSS" imagem={css} />
+          <CaixaHabilidade linguagem="React.JS" imagem={react} />
 
-        <CaixaHabilidade linguagem="Node.JS" imagem={node} />
-        <CaixaHabilidade linguagem="Api REST" imagem={api} />
-        <CaixaHabilidade linguagem="PostegreSQL" imagem={PostegreSQL} />
-        <CaixaHabilidade linguagem="Git" imagem={git} />
-        <CaixaHabilidade linguagem="GitHub" imagem={gitHub} />
-      </div>
-      <div className="containerInteresseIndividual" id="oceanografia">
-        <CaixaHabilidade
-          linguagem="Coisas de Oceanografia"
-          imagem={javascript}
-        />
-        <CaixaHabilidade linguagem="Coisas de Oceanografia" imagem={html} />
-        <CaixaHabilidade linguagem="Coisas de Oceanografia" imagem={css} />
-        <CaixaHabilidade linguagem="Coisas de Oceanografia" imagem={react} />
-
-        <CaixaHabilidade linguagem="Coisas de Oceanografia" imagem={node} />
-        <CaixaHabilidade linguagem="Coisas de Oceanografia" imagem={api} />
-        <CaixaHabilidade
-          linguagem="Coisas de Oceanografia"
-          imagem={PostegreSQL}
-        />
-        <CaixaHabilidade
-          linguagem="Coisas de Oceanografia"
-          imagem={gitComHub}
-        />
+          <CaixaHabilidade linguagem="Node.JS" imagem={node} />
+          <CaixaHabilidade linguagem="Api REST" imagem={api} />
+          <CaixaHabilidade linguagem="PostegreSQL" imagem={PostegreSQL} />
+          <CaixaHabilidade linguagem="Git" imagem={git} />
+          <CaixaHabilidade linguagem="GitHub" imagem={gitHub} />
+        </div>
+        <div
+          className="containerInteresseIndividual entrando"
+          id="oceanografia"
+        >
+          <CaixaHabilidade linguagem="Mestrado" imagem={mestrado} />
+          <CaixaHabilidade linguagem="Linguagem R" imagem={R} />
+          <CaixaHabilidade linguagem="Microscopia" imagem={microscopia} />
+          <CaixaHabilidade
+            linguagem="Estatística avançada"
+            imagem={estatistica}
+          />
+          <CaixaHabilidade
+            linguagem="Machine Learning"
+            imagem={machineLearning}
+          />
+          <CaixaHabilidade
+            linguagem="Reprodução de peixes"
+            imagem={reproducaoDePeixe}
+          />
+          <CaixaHabilidade
+            linguagem="Oceanografia pesqueira"
+            imagem={oceanografiaPesqueira}
+          />
+          <CaixaHabilidade linguagem="Embarques" imagem={coletaDeDados} />
+          <CaixaHabilidade linguagem="Confecção de mapas" imagem={mapa} />
+        </div>
       </div>
     </section>
   );
