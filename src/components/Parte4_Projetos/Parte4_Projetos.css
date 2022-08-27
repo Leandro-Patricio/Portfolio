@@ -10,3 +10,9 @@
   font-size: 40px;
   margin: 0;
 }
+
+.containerProjetos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
