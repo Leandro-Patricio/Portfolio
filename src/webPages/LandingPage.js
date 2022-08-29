@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Parte1_Ola from "../components/Parte1_Ola/Parte1_Ola";
-import Sobre from "../components/Sobre/Sobre";
+import Parte2_Sobre from "../components/Parte2_Sobre/Parte2_Sobre";
 import Header from "../components/Header/Header";
-import Parte3_AreaDeInteresse from "../components/Parte3_AreaDeInteresse/Parte3_AreaDeInteresse";
+import Parte3_AreaDeInteresse from "../components/Parte3_Habilidades/Parte3_Habilidades";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -23,7 +23,7 @@ const LandingPage = () => {
         <Parte1_Ola />
       </div>
 
-      <Sobre />
+      <Parte2_Sobre />
       <Parte3_AreaDeInteresse />
 
       <Parte4_Projetos />

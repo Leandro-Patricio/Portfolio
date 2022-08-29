@@ -1,7 +1,6 @@
 import { Link, scrollSpy } from "react-scroll";
 import { useState } from "react";
 import "./Header.css";
-import Aos from "aos";
 
 const Header = () => {
   scrollSpy.update();
@@ -27,22 +26,17 @@ const Header = () => {
         <p id="bar3" class="bar"></p>
       </div>
       <div className="insideCabecalho">
-        <Link to="sobre" smooth spy={true} hashSpy={true}>
+        <Link to="sobre" smooth spy={true} hashSpy={true} offset={-40}>
           Sobre
         </Link>
       </div>
       <div className="insideCabecalho">
-        <Link to="areaDeInteresse" smooth spy={true} hashSpy={true}>
-          Área de Interesse
+        <Link to="habilidades" smooth spy={true} hashSpy={true} offset={-200}>
+          Habilidades
         </Link>
       </div>
       <div className="insideCabecalho">
-        <Link to="formacaoAcademica" smooth spy={true} hashSpy={true}>
-          Formação acadêmica
-        </Link>
-      </div>
-      <div className="insideCabecalho">
-        <Link to="projetos" smooth spy={true} hashSpy={true}>
+        <Link to="projetos" smooth spy={true} hashSpy={true} offset={0}>
           Projetos
         </Link>
       </div>

@@ -1,14 +1,14 @@
-.secAreaDeInteresse {
-  background-color: black;
-  color: white;
-}
-
 .subTitulo {
   text-align: center;
   color: rgb(255, 255, 255);
   padding: 10vh 0 0 0;
   font-size: 40px;
   margin: 0;
+}
+
+.sectionHabilidade {
+  background-color: black;
+  color: rgb(255, 255, 255);
 }
 
 .containerInteressePrincipal {
@@ -28,26 +28,14 @@
   transition: all 0.7s ease-in-out;
 }
 
-.imagemInteressePrincipal {
-  transition: all 0.7s ease-in-out;
-}
-
 .imagemProgramador {
   width: 400px;
   cursor: pointer;
 }
 
-.imagemProgramador:hover {
-  width: 500px;
-}
-
 .imagemOceanografia {
   width: 300px;
   cursor: pointer;
-}
-
-.imagemOceanografia:hover {
-  width: 380px;
 }
 
 @media screen and (max-width: 800px) {
@@ -58,14 +46,9 @@
   .imagemProgramador {
     width: 100px;
   }
-  .imagemProgramador:hover {
-    width: 130px;
-  }
+
   .imagemOceanografia {
     width: 80px;
-  }
-  .imagemOceanografia:hover {
-    width: 100px;
   }
 
   h2 {

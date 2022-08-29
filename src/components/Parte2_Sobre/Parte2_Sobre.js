@@ -1,10 +1,9 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { Link } from "react-scroll";
 import corpoInteiroOval from "../../fig/corpo_inteiro_com_jade_oval.png";
-import "./Sobre.css";
+import "./Parte2_Sobre.css";
 
-const Sobre = () => {
+const Parte2_Sobre = () => {
   Aos.init();
   return (
     <section
@@ -70,6 +69,6 @@ const Sobre = () => {
   );
 };
 
-export default Sobre;
+export default Parte2_Sobre;
 
 /*  */

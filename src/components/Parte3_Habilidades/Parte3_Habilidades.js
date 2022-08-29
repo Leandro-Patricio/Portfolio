@@ -1,7 +1,7 @@
-import CaixaHabilidade from "../CaixaHabilidade/CaixaHabilidade";
+import CaixaHabilidade from "./CaixaHabilidade/CaixaHabilidade";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import "./Parte3_AreaDeInteresse.css";
+import "./Parte3_Habilidades.css";
 import imgProgramador from "../../fig/programador_undraw_resize.svg";
 import imgOceanografia from "../../fig/cyborg-bottom-of-the-sea_resize.png";
 import javascript from "../../fig/javascript.png";
@@ -32,36 +32,30 @@ const Parte3_AreaDeInteresse = () => {
   const [isOceanographyOn, setIsOceanographyOn] = useState(false);
 
   const entrarHabilidadesWebDev = () => {
-    switch (isWebDevOn) {
-      case false:
-        setIsWebDevOn(!isWebDevOn);
-        document.getElementById("devWeb").classList.remove("saindo");
-        document.getElementById("devWeb").classList.add("entrando");
-        break;
-      case true:
-        document.getElementById("devWeb").classList.remove("entrando");
-        document.getElementById("devWeb").classList.add("saindo");
-        setIsWebDevOn(!isWebDevOn);
-        break;
+    if (!isWebDevOn) {
+      setIsWebDevOn(!isWebDevOn);
+      document.getElementById("devWeb").classList.remove("saindo");
+      document.getElementById("devWeb").classList.add("entrando");
+    } else {
+      document.getElementById("devWeb").classList.remove("entrando");
+      document.getElementById("devWeb").classList.add("saindo");
+      setIsWebDevOn(!isWebDevOn);
     }
   };
   const entrarHabilidadesOceanografia = () => {
-    switch (isOceanographyOn) {
-      case false:
-        setIsOceanographyOn(!isOceanographyOn);
-        document.getElementById("oceanografia").classList.remove("saindo");
-        document.getElementById("oceanografia").classList.add("entrando");
-        break;
-      case true:
-        document.getElementById("oceanografia").classList.remove("entrando");
-        document.getElementById("oceanografia").classList.add("saindo");
-        setIsOceanographyOn(!isOceanographyOn);
-        break;
+    if (!isOceanographyOn) {
+      setIsOceanographyOn(!isOceanographyOn);
+      document.getElementById("oceanografia").classList.remove("saindo");
+      document.getElementById("oceanografia").classList.add("entrando");
+    } else {
+      document.getElementById("oceanografia").classList.remove("entrando");
+      document.getElementById("oceanografia").classList.add("saindo");
+      setIsOceanographyOn(!isOceanographyOn);
     }
   };
 
   return (
-    <section className="secAreaDeInteresse">
+    <section className="sectionHabilidade">
       <h1 className="subTitulo" data-aos="fade-down" data-aos-duration="3000">
         Habilidades
       </h1>
@@ -71,8 +65,8 @@ const Parte3_AreaDeInteresse = () => {
           data-aos="zoom-in-right"
           data-aos-duration="2000"
           onClick={() => entrarHabilidadesWebDev()}
-          name="areaDeInteresse"
-          id="areaDeInteresse"
+          name="habilidades"
+          id="habilidades"
         >
           <h2 style={{ textAlign: "center" }}> Desenvolvedor Web</h2>
           <img
