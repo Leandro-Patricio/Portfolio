@@ -38,6 +38,29 @@
   cursor: pointer;
 }
 
+.containerBtnMostrarMaisHabilidades {
+  display: none;
+}
+
+.btnMostrarMaisHabilidades {
+  width: 60vw;
+}
+
+.containerInteresseIndividual {
+  display: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  position: relative;
+}
+.entrando {
+  display: flex;
+  transition: 2s;
+  left: 10px;
+  animation: entrando 2s;
+  animation-fill-mode: forwards;
+}
+
 @media screen and (max-width: 800px) {
   .containerInteressePrincipal {
     height: 200px;
@@ -54,20 +77,39 @@
   h2 {
     font-size: 15px;
   }
-}
-.containerInteresseIndividual {
-  display: none;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0 20px;
-  position: relative;
-}
-.entrando {
-  display: flex;
-  transition: 2s;
-  left: 10px;
-  animation: entrando 2s;
-  animation-fill-mode: forwards;
+  .mostrarMaisHabilidades {
+    display: flex;
+    transition: 2s ease;
+  }
+  .mostrarMenosHabilidades div:nth-child(n + 5) {
+    display: none;
+  }
+
+  .containerBtnMostrarMaisHabilidades {
+    display: flex;
+    text-align: center;
+    border: 3px solid white;
+    margin: 2vh 20vw 0 20vw;
+    border-radius: 25px;
+    padding: 1vw;
+    cursor: pointer;
+    /*     background-color: black;
+    color: white; */
+  }
+
+  .containerBtnMostrarMaisHabilidades:hover {
+    background-color: orange;
+    color: black;
+  }
+
+  .containerBtnMostrarMenosHabilidades {
+    background-color: orange;
+    color: black;
+  }
+  .containerBtnMostrarMenosHabilidades:hover {
+    background-color: black;
+    color: white;
+  }
 }
 
 @keyframes entrando {

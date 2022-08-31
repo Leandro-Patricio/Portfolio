@@ -8,6 +8,7 @@ const CaixaHabilidade = (props) => {
       data-aos="zoom-in"
       data-aos-duration="1000"
       className="boxesHabilidades"
+      id={props.linguagem}
     >
       <img className="imgHabilidade" src={props.imagem} alt={props.linguagem} />
       <div>{props.linguagem}</div>

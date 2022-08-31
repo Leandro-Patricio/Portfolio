@@ -5,6 +5,7 @@ import Parte1_Ola from "../components/Parte1_Ola/Parte1_Ola";
 import Parte2_Sobre from "../components/Parte2_Sobre/Parte2_Sobre";
 import Header from "../components/Header/Header";
 import Parte3_AreaDeInteresse from "../components/Parte3_Habilidades/Parte3_Habilidades";
+import Parte5_EntreEmContato from "../components/Parte5_EntreEmContato/Parte5_EntreEmContato";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -27,9 +28,7 @@ const LandingPage = () => {
       <Parte3_AreaDeInteresse />
 
       <Parte4_Projetos />
-      <div name="entreEmContato" id="entreEmContato">
-        Entre em contato
-      </div>
+      <Parte5_EntreEmContato />
       <div name="finalDaPagina" id="finalDaPagina">
         to aqui embaixo
       </div>

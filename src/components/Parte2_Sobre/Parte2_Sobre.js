@@ -22,7 +22,7 @@ const Parte2_Sobre = () => {
 
       <div className="containerSobre">
         <div
-          data-aos="fade-right"
+          data-aos="zoom-in-down"
           data-aos-duration="3000"
           style={{ margin: "5vh 5vw 0vh 5vw" }}
           name="sobre"

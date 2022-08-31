@@ -2,6 +2,9 @@ import CaixaHabilidade from "./CaixaHabilidade/CaixaHabilidade";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "./Parte3_Habilidades.css";
+import { useState } from "react";
+import { Link } from "react-scroll";
+
 import imgProgramador from "../../fig/programador_undraw_resize.svg";
 import imgOceanografia from "../../fig/cyborg-bottom-of-the-sea_resize.png";
 import javascript from "../../fig/javascript.png";
@@ -13,7 +16,6 @@ import api from "../../fig/api.png";
 import PostegreSQL from "../../fig/PostegreSQL.png";
 import git from "../../fig/git.png";
 import gitHub from "../../fig/gitHub.png";
-
 import coletaDeDados from "../../fig/coletaDeDados.jpg";
 import estatistica from "../../fig/estatistica.png";
 import machineLearning from "../../fig/machineLearning.png";
@@ -24,12 +26,11 @@ import R from "../../fig/R.png";
 import reproducaoDePeixe from "../../fig/reproducaoDePeixe.jpg";
 import mapa from "../../fig/mapa.png";
 
-import { useState } from "react";
-
 const Parte3_AreaDeInteresse = () => {
   Aos.init();
   const [isWebDevOn, setIsWebDevOn] = useState(true);
   const [isOceanographyOn, setIsOceanographyOn] = useState(false);
+  const [maisHabilidades, setMaisHabilidades] = useState(false);
 
   const entrarHabilidadesWebDev = () => {
     if (!isWebDevOn) {
@@ -54,6 +55,37 @@ const Parte3_AreaDeInteresse = () => {
     }
   };
 
+  const alterarHabilidades = () => {
+    const habilidades = document.getElementsByClassName(
+      "containerInteresseIndividual"
+    );
+    if (maisHabilidades) {
+      setMaisHabilidades(!maisHabilidades);
+      document.getElementById("btnMostrarMaisHabilidades").textContent =
+        "Mostrar mais habilidades";
+      for (let i = 0; i < habilidades.length; i++) {
+        habilidades[i].classList.remove("mostrarMaisHabilidades");
+        habilidades[i].classList.add("mostrarMenosHabilidades");
+      }
+      document
+        .getElementById("containerBtnMostrarMaisHabilidades")
+        .classList.remove("containerBtnMostrarMenosHabilidades");
+    } else {
+      setMaisHabilidades(!maisHabilidades);
+      document.getElementById("btnMostrarMaisHabilidades").textContent =
+        "Mostrar menos habilidades";
+
+      for (let i = 0; i < habilidades.length; i++) {
+        habilidades[i].classList.remove("mostrarMenosHabilidades");
+        habilidades[i].classList.add("mostrarMaisHabilidades");
+      }
+
+      document
+        .getElementById("containerBtnMostrarMaisHabilidades")
+        .classList.add("containerBtnMostrarMenosHabilidades");
+    }
+  };
+
   return (
     <section className="sectionHabilidade">
       <h1 className="subTitulo" data-aos="fade-down" data-aos-duration="3000">
@@ -62,7 +94,7 @@ const Parte3_AreaDeInteresse = () => {
       <div className="containerInteressePrincipal">
         <div
           className="interessePrincipal"
-          data-aos="zoom-in-right"
+          data-aos="flip-left"
           data-aos-duration="2000"
           onClick={() => entrarHabilidadesWebDev()}
           name="habilidades"
@@ -78,7 +110,7 @@ const Parte3_AreaDeInteresse = () => {
 
         <div
           className="interessePrincipal"
-          data-aos="zoom-in-left"
+          data-aos="flip-right"
           data-aos-duration="2000"
           onClick={() => entrarHabilidadesOceanografia()}
         >
@@ -92,7 +124,10 @@ const Parte3_AreaDeInteresse = () => {
         </div>
       </div>
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <div className="containerInteresseIndividual entrando" id="devWeb">
+        <div
+          className="containerInteresseIndividual mostrarMenosHabilidades entrando"
+          id="devWeb"
+        >
           <CaixaHabilidade linguagem="JavaScript" imagem={javascript} />
           <CaixaHabilidade linguagem="HTML" imagem={html} />
           <CaixaHabilidade linguagem="CSS" imagem={css} />
@@ -105,7 +140,7 @@ const Parte3_AreaDeInteresse = () => {
           <CaixaHabilidade linguagem="GitHub" imagem={gitHub} />
         </div>
         <div
-          className="containerInteresseIndividual entrando"
+          className="containerInteresseIndividual mostrarMenosHabilidades entrando"
           id="oceanografia"
         >
           <CaixaHabilidade linguagem="Mestrado" imagem={mestrado} />
@@ -130,6 +165,23 @@ const Parte3_AreaDeInteresse = () => {
           <CaixaHabilidade linguagem="Embarques" imagem={coletaDeDados} />
           <CaixaHabilidade linguagem="Confecção de mapas" imagem={mapa} />
         </div>
+      </div>
+      <div
+        className="containerBtnMostrarMaisHabilidades"
+        id="containerBtnMostrarMaisHabilidades"
+      >
+        <Link
+          to="React.JS"
+          smooth
+          spy={true}
+          hashSpy={true}
+          offset={-200}
+          className="btnMostrarMaisHabilidades"
+          id="btnMostrarMaisHabilidades"
+          onClick={() => alterarHabilidades()}
+        >
+          Mostar mais habilidades
+        </Link>
       </div>
     </section>
   );

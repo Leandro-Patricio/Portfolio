@@ -23,6 +23,7 @@
 
 .insideCabecalho:hover {
   cursor: pointer;
+  color: orange;
   animation-name: tremer;
   animation-duration: 2s;
   animation-iteration-count: infinite;
