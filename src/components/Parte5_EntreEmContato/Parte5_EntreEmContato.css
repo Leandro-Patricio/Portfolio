@@ -1,19 +1,131 @@
-.secProjetos {
+.abreModal {
+  cursor: pointer;
+}
+
+.containerModal {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 1);
+  animation: aparecendo 1.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.conteudoModal {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-content: center;
+  font-size: 30px;
   background-color: black;
+  box-shadow: 5px 5px 15px;
+}
+
+@keyframes aparecendo {
+  0% {
+    padding-top: 0;
+    opacity: 0;
+  }
+  60% {
+    padding-top: 30vh;
+    opacity: 1;
+  }
+  70% {
+    padding-top: 15vh;
+    opacity: 1;
+  }
+  80% {
+    padding-top: 23vh;
+    opacity: 1;
+  }
+  90% {
+    padding-top: 18vh;
+    opacity: 1;
+  }
+  100% {
+    padding-top: 20vh;
+    opacity: 1;
+  }
+}
+
+.fechaModal {
+  color: #aaaaaa;
+  position: absolute;
+  right: 25vw;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 1s, color 1s;
+  animation: aparecendoFechaModal 1.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes aparecendoFechaModal {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  60% {
+    top: 32vh;
+    opacity: 1;
+  }
+  70% {
+    top: 17vh;
+    opacity: 1;
+  }
+  80% {
+    top: 25vh;
+    opacity: 1;
+  }
+  90% {
+    top: 20vh;
+    opacity: 1;
+  }
+  100% {
+    top: 22vh;
+    opacity: 1;
+  }
+}
+
+.fechaModal:hover {
+  transform: scale(2.5);
+  color: red;
+}
+
+.btnEmail {
+  margin: 5vh 0 0 0;
+  font-size: 30px;
+  text-align: start;
+  padding: 2vh 2vw;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: gray;
+  border: 0px;
+  border-radius: 10px;
+  transition: transform 0.5s, background-color 0.5s, color 0.5s;
+}
+
+.btnEmail:hover {
+  background-color: orange;
+  transform: scale(1.05);
   color: white;
 }
 
-.subTitulo {
-  text-align: center;
-  color: rgb(255, 255, 255);
-  padding: 10vh 0 0 0;
-  font-size: 40px;
-  margin: 0;
-}
-
-.containerProjetos {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
+.imgEmail {
+  width: 30px;
+  margin: 2px 3vw 2px 1vw;
 }
