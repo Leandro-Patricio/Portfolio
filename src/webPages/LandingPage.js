@@ -29,15 +29,7 @@ const LandingPage = () => {
 
       <Parte4_Projetos />
       <Parte5_EntreEmContato />
-      <div name="finalDaPagina" id="finalDaPagina">
-        to aqui embaixo
-      </div>
 
-      <div style={{ textAlign: "center" }}>
-        <img src={Maintenance} atl="Manutenção" />
-        Está página está em manutenção
-        <img src={Maintenance} atl="Manutenção" />
-      </div>
       <Footer />
     </div>
   );

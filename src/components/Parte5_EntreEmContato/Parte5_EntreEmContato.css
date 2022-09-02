@@ -1,5 +1,52 @@
-.abreModal {
+.secEntreEmContato {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+#subTitulo {
+  margin: 7vh 100px;
+  font-size: 30px;
+}
+
+#containerContato {
+  display: flex;
+  justify-content: space-around;
+}
+
+#containerInformacoesGerais {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#containerContato .tituloPrincipalInformacao {
+  font-size: 35px;
+  margin-bottom: 1vh;
+  align-items: center;
+}
+
+#containerContato .subTituloPrincipal {
+  font-size: 20px;
+  margin-bottom: 5vh;
+}
+
+#containerInformacoesGerais .tituloInformacao {
+  font-size: 30px;
+  margin-bottom: 1vh;
+}
+
+#containerInformacoesGerais .informacao {
+  font-size: 20px;
+  margin-bottom: 5vh;
   cursor: pointer;
+  transition: color 0.5s;
+}
+
+#containerInformacoesGerais .informacao:hover {
+  color: orange;
+}
+
+.abreModal {
 }
 
 .containerModal {
@@ -128,4 +175,85 @@
 .imgEmail {
   width: 30px;
   margin: 2px 3vw 2px 1vw;
+}
+
+@media screen and (max-width: 800px) {
+  .conteudoModal {
+    font-size: 5vw;
+  }
+
+  .btnEmail {
+    font-size: 4vw;
+  }
+}
+
+.containerCopiado {
+  display: none;
+  position: fixed;
+  font-size: 30px;
+  text-align: center;
+  padding: 3vh 2vw;
+  left: 0px;
+  top: 50%;
+  width: 10%;
+  height: 50px;
+  color: black;
+  background-color: rgba(1, 255, 1, 1);
+  -webkit-text-stroke: 0.2px black;
+  border-radius: 0 10px 10px 0;
+}
+
+.aparecerCopiado {
+  display: block;
+  animation: aparecerCopiado 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  transition: display 1s;
+}
+
+@keyframes aparecerCopiado {
+  0% {
+    left: -20%;
+  }
+  10% {
+    left: 0;
+  }
+  90% {
+    left: 0;
+  }
+  100% {
+    left: -20%;
+  }
+}
+
+#containerBotoesRedesSociais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.redeSocial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2vw 5vh;
+  cursor: pointer;
+}
+
+.imgRedeSocial {
+  width: 60px;
+  margin: 10px;
+}
+
+.redeSocialNome {
+}
+
+.displayRow {
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }

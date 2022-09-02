@@ -1,5 +1,7 @@
 import "./BotoesContato.css";
 
+import email from "../../fig/email.svg";
+
 const BotoesContato = () => {
   return (
     <div className="container">
