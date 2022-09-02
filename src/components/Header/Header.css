@@ -23,13 +23,14 @@ header {
   padding: 18px 0vw;
   text-decoration: none;
   color: white;
+  transition: color 0.5s;
 }
 .insideCabecalho:hover {
   cursor: pointer;
   color: orange;
-  animation-name: tremer;
+  /*   animation-name: tremer;
   animation-duration: 2s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
 }
 .hamburguer {
   cursor: pointer;
@@ -46,18 +47,6 @@ header {
   border-radius: 5px;
   transition: 0.3s ease;
   margin: 2px 0 2px 0px;
-}
-
-@keyframes tremer {
-  25% {
-    rotate: 10deg;
-  }
-  50% {
-    rotate: -10deg;
-  }
-  100% {
-    rotate: 0deg;
-  }
 }
 
 @media screen and (max-width: 540px) {
@@ -90,7 +79,7 @@ header {
     align-items: flex-start;
     flex-direction: column;
     width: 50%;
-    height: 330px;
+    height: 230px;
     background-color: rgb(78, 78, 78);
     border-radius: 0 50px 50px 10px;
     transition: all 0.7s ease-in-out;

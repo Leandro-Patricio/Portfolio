@@ -41,13 +41,8 @@ const Header = () => {
         </Link>
       </div>
       <div className="insideCabecalho">
-        <Link to="entreEmContato" smooth spy={true} hashSpy={true}>
+        <Link to="entreEmContato" smooth spy={true} hashSpy={true} offset={0}>
           Entre em contato
-        </Link>
-      </div>
-      <div className="insideCabecalho">
-        <Link to="finalDaPagina" smooth spy={true} hashSpy={true}>
-          Final da página
         </Link>
       </div>
     </header>

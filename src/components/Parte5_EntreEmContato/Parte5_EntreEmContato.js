@@ -8,6 +8,7 @@ import email from "../../fig/email.svg";
 import whatsapp from "../../fig/whatsapp.svg";
 import linkedin from "../../fig/linkedin.svg";
 import instagram from "../../fig/instagram.svg";
+import download from "../../fig/download.svg";
 
 import curriculo from "../../fig/curriculo_LFP.pdf";
 
@@ -54,7 +55,6 @@ const Parte5_EntreEmContato = () => {
   return (
     <section className="secEntreEmContato">
       <h1
-        name="entreEmContato"
         id="entreEmContato"
         className="subTitulo"
         data-aos="fade-down"
@@ -64,7 +64,7 @@ const Parte5_EntreEmContato = () => {
       </h1>
 
       <div>
-        <div id="subTitulo">
+        <div id="subTitulo" name="entreEmContato">
           Quer saber mais? <br />
           Dê um olá!
         </div>
@@ -117,7 +117,11 @@ const Parte5_EntreEmContato = () => {
             <div className="tituloPrincipalInformacao">Redes Sociais</div>
             <div className="displayRow">
               <div className="redeSocial" onClick={() => abrirModal()}>
-                <img className="imgRedeSocial" src={email} alt="email" />
+                <img
+                  className="imgRedeSocial tamanhoImg"
+                  src={email}
+                  alt="email"
+                />
                 <div className="redeSocialNome">Email</div>
               </div>
               <div className="redeSocial">
@@ -128,7 +132,7 @@ const Parte5_EntreEmContato = () => {
                   className="linkParaRedeSocial"
                 >
                   <img
-                    className="imgRedeSocial"
+                    className="imgRedeSocial tamanhoImg"
                     src={whatsapp}
                     alt="whatsapp"
                   />
@@ -145,7 +149,7 @@ const Parte5_EntreEmContato = () => {
                   className="linkParaRedeSocial"
                 >
                   <img
-                    className="imgRedeSocial"
+                    className="imgRedeSocial tamanhoImg"
                     src={linkedin}
                     alt="linkedin"
                   />
@@ -160,7 +164,7 @@ const Parte5_EntreEmContato = () => {
                   className="linkParaRedeSocial"
                 >
                   <img
-                    className="imgRedeSocial"
+                    className="imgRedeSocial tamanhoImg"
                     src={instagram}
                     alt="instagram"
                   />
@@ -168,20 +172,21 @@ const Parte5_EntreEmContato = () => {
                 </a>
               </div>
             </div>
-            <div>Que tal dar uma olhada no meu currículo?</div>
-            <div>
-              <button>
-                <a
-                  href={curriculo}
-                  style={{ color: "black" }}
-                  target="_blank"
-                  className="linkParaRedeSocial"
-                  download="curriculo_Leandro_Patrício"
-                >
-                  Clique aqui para baixá-lo!
-                </a>
-              </button>
-            </div>
+            <div className="tituloPrincipalInformacao">Currículo</div>
+            <button className="btnDownload">
+              <a
+                href={curriculo}
+                target="_blank"
+                className="linkParaRedeSocial displayRow"
+                download="curriculo_Leandro_Patrício"
+                style={{ alignItems: "center" }}
+              >
+                Clique aqui para baixar
+                <span>
+                  <img src={download} alt="download" className="imgDownload" />
+                </span>
+              </a>
+            </button>
           </div>
         </div>
       </div>

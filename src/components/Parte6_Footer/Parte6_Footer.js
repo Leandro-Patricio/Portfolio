@@ -2,25 +2,20 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { animateScroll } from "react-scroll";
 
-const Footer = () => {
+import "./Parte6_Footer.css";
+
+import busto from "../../fig/busto_oval.png";
+import fundoDoFooter from "../../fig/fundoDoFooter.png";
+
+const Parte6_Footer = () => {
   Aos.init();
   return (
     <footer>
+      {/* btn voltar ao topo */}
       <div
-        class="item"
+        className="item btnVoltaAoTopo"
         data-aos="fade-up"
         data-aos-duration="3000"
-        style={{
-          cursor: "pointer",
-          position: "fixed",
-          bottom: "5vh",
-          right: "10vw",
-          zIndex: "2",
-          width: "50px",
-          borderRadius: "50px",
-          marginLeft: "5vw",
-          textAlign: "center",
-        }}
       >
         <a onClick={() => animateScroll.scrollToTop()} href={() => false}>
           {/*  somente uma seta */}
@@ -40,10 +35,16 @@ const Footer = () => {
           </svg>
         </a>
       </div>
+
+      <div className="tamanho">
+        &copy; 2022 | Design e desenvolvimento: Leandro Fernandes Patrício
+      </div>
+
+      {/*       <div>
+        <img src={bustoOval} alt="busto do leandro" className="fotoFooter" />
+      </div> */}
     </footer>
   );
 };
 
-export default Footer;
-
-/*  */
+export default Parte6_Footer;

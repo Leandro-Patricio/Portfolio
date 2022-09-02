@@ -8,7 +8,7 @@ const Parte2_Sobre = () => {
   return (
     <section
       style={{
-        backgroundImage: "linear-gradient(#042E42, black)",
+        backgroundImage: "linear-gradient(#021B27, black)",
       }}
     >
       <h1
@@ -57,7 +57,7 @@ const Parte2_Sobre = () => {
           </div>
         </div>
 
-        <div data-aos="fade-left" data-aos-duration="3000">
+        <div data-aos="zoom-in-down" data-aos-duration="3000">
           <img
             alt="Foto do Leandro"
             src={corpoInteiroOval}
