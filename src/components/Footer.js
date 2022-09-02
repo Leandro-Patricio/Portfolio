@@ -1,6 +1,6 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { Link, animateScroll } from "react-scroll";
+import { animateScroll } from "react-scroll";
 
 const Footer = () => {
   Aos.init();
@@ -22,7 +22,6 @@ const Footer = () => {
           textAlign: "center",
         }}
       >
-        {" "}
         <a onClick={() => animateScroll.scrollToTop()} href={() => false}>
           {/*  somente uma seta */}
           <svg

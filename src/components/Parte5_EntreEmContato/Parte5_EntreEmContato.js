@@ -125,6 +125,7 @@ const Parte5_EntreEmContato = () => {
                   href=" https://whatsa.me/5511981619965/?t=Ol%C3%A1!%20Vi%20o%20seu%20portf%C3%B3lio!"
                   target="_blank"
                   rel="external"
+                  className="linkParaRedeSocial"
                 >
                   <img
                     className="imgRedeSocial"
@@ -141,6 +142,7 @@ const Parte5_EntreEmContato = () => {
                   href="https://www.linkedin.com/in/leandro-patrico/"
                   target="_blank"
                   rel="external"
+                  className="linkParaRedeSocial"
                 >
                   <img
                     className="imgRedeSocial"
@@ -155,6 +157,7 @@ const Parte5_EntreEmContato = () => {
                   href="https://www.instagram.com/le.patricio/"
                   target="_blank"
                   rel="external"
+                  className="linkParaRedeSocial"
                 >
                   <img
                     className="imgRedeSocial"
@@ -172,6 +175,7 @@ const Parte5_EntreEmContato = () => {
                   href={curriculo}
                   style={{ color: "black" }}
                   target="_blank"
+                  className="linkParaRedeSocial"
                   download="curriculo_Leandro_Patrício"
                 >
                   Clique aqui para baixá-lo!

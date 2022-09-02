@@ -253,7 +253,7 @@
   flex-direction: row;
 }
 
-a {
+a.linkParaRedeSocial {
   text-decoration: none;
   color: white;
 }
