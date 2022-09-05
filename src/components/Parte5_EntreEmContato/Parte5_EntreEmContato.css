@@ -2,11 +2,37 @@
   text-align: center;
   background-color: black;
   color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
 #subTitulo {
   margin: 4vh 8vw;
   font-size: 30px;
+}
+
+#containerImgProfissional {
+  position: sticky;
+  top: 30px;
+  margin-top: 10vh;
+}
+#imagemCorpoIniteroProfissional {
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 620px) {
+  #imagemCorpoIniteroProfissional {
+    width: 30vw;
+    height: 200vh;
+    object-fit: none;
+    /*     left: -10px; */
+  }
+}
+@media screen and (max-width: 350px) {
+  #containerImgProfissional {
+    display: none;
+  }
 }
 
 #containerContato {
@@ -52,13 +78,11 @@
   margin-bottom: 5vh;
   cursor: pointer;
   transition: color 0.5s;
+  text-align: left;
 }
 
 #containerInformacoesGerais .informacao:hover {
   color: orange;
-}
-
-.abreModal {
 }
 
 .containerModal {
