@@ -102,14 +102,14 @@ const Parte5_EntreEmContato = () => {
                   className="informacao"
                   onClick={() => copiarParaClipboard(" +55(11) 9 8161-9965")}
                 >
-                  +55(11) 9 8161-9965
+                  +55 (11) 9 8161-9965
                 </span>
                 <span> &nbsp;/ &nbsp;</span>
                 <span
                   className="informacao"
                   onClick={() => copiarParaClipboard("+55(21) 9 7749-5545")}
                 >
-                  +55(21) 9 7749-5545
+                  +55 (21) 9 7749-5545
                 </span>
               </div>
               <div className="tituloInformacao">E-mail</div>
