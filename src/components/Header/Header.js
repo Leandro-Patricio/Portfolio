@@ -13,7 +13,6 @@ const Header = () => {
   return (
     <header
       className={isNavExpanded ? "cabecalho cabecalhoExpandido" : "cabecalho"}
-      /* className="cabecalhoExpandido" */
       id="laEmCima"
     >
       <div
@@ -50,5 +49,3 @@ const Header = () => {
 };
 
 export default Header;
-
-/*  */

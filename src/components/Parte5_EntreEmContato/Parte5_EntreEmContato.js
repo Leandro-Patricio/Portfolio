@@ -71,9 +71,6 @@ const Parte5_EntreEmContato = () => {
           Entre em Contato
         </h1>
         <div>
-          {/*         <div id="containerImgProfissional">
-          <img src={imgProfissional} alt="imagem de busto Profissional" />
-        </div> */}
           <div id="subTitulo" name="entreEmContato">
             Quer saber mais? <br />
             Dê um olá!

@@ -4,7 +4,6 @@ header {
 
 .cabecalho {
   color: white;
-  /*   padding: 3vh 3vw; */
   position: fixed;
   top: 0;
   width: 100%;
@@ -28,9 +27,6 @@ header {
 .insideCabecalho:hover {
   cursor: pointer;
   color: orange;
-  /*   animation-name: tremer;
-  animation-duration: 2s;
-  animation-iteration-count: infinite; */
 }
 .hamburguer {
   cursor: pointer;

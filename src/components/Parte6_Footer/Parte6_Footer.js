@@ -4,14 +4,10 @@ import { animateScroll } from "react-scroll";
 
 import "./Parte6_Footer.css";
 
-import busto from "../../fig/busto_oval.png";
-import fundoDoFooter from "../../fig/fundoDoFooter.png";
-
 const Parte6_Footer = () => {
   Aos.init();
   return (
     <footer>
-      {/* btn voltar ao topo */}
       <div
         className="item btnVoltaAoTopo"
         data-aos="fade-up"
@@ -39,10 +35,6 @@ const Parte6_Footer = () => {
       <div className="tamanho">
         &copy; 2022 | Design e desenvolvimento: Leandro Fernandes Patrício
       </div>
-
-      {/*       <div>
-        <img src={bustoOval} alt="busto do leandro" className="fotoFooter" />
-      </div> */}
     </footer>
   );
 };

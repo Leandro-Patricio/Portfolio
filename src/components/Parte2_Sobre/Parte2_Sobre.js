@@ -49,7 +49,7 @@ const Parte2_Sobre = () => {
             </span>
             , o recurso pesqueiro mais importante do Brasil. Para atingir o
             objetivo da dissertação, eventualmente esbarrei na programação e,
-            assim, descobri uma nova paixão.
+            assim, descobri uma nova paixão, programação.
           </div>
           <div>
             Começando com C++, MatLab e principalmente R, hoje estudo Web
