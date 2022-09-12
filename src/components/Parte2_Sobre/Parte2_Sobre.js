@@ -30,25 +30,22 @@ const Parte2_Sobre = () => {
           Desde a infância, sempre adorei o mar e as criaturas que nele habitam.
           Sem hesitar, ingressei no instituto de oceanografia da USP.
           <div>
-            Desde o primeiro ano, entrei em contato com laboratórios que
-            trabalhavam com peixes, e acabei descobrindo uma paixão, a pesca e
-            seu manejo. Então, fiz meu TCC analisando os estoques pesqueiros
-            mais importantes da nossa região.
-          </div>
-          <div>
-            Seguindo com os estudos, meu mestrado focou na capacidade
-            reprodutiva da&nbsp;
+            Desde o primeiro ano, entrei em contato com laboratórios, e acabei
+            descobrindo a pesca e seu manejo. Então, fiz meu TCC e meu mestrado
+            analisando os estoques pesqueiros mais importantes da nossa região,
+            como a da &nbsp;
             <span>
               <a
                 href="https://www.funbio.org.br/em-defesa-da-sardinha/"
                 target="_blank"
                 style={{ textDecoration: "none" }}
               >
-                <u>Sardinha-Verdadeira</u>
+                <u>Sardinha-Verdadeira.</u>
               </a>
             </span>
-            , o recurso pesqueiro mais importante do Brasil. Para atingir o
-            objetivo da dissertação, eventualmente esbarrei na programação e,
+          </div>
+          <div>
+            Para atingir o objetivo da dissertação, esbarrei na programação e,
             assim, descobri uma nova paixão, programação.
           </div>
           <div>

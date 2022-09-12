@@ -74,11 +74,12 @@
 }
 
 #containerInformacoesGerais .informacao {
-  font-size: 20px;
+  /*   font-size: 20px; */
   margin-bottom: 5vh;
   cursor: pointer;
   transition: color 0.5s;
   text-align: left;
+  font-size: clamp(10px, 5vw, 20px);
 }
 
 #containerInformacoesGerais .informacao:hover {

@@ -10,6 +10,7 @@ const Header = () => {
     setIsNavExpanded(!isNavExpanded);
     document.getElementById("menu-bar").classList.toggle("change");
   };
+
   return (
     <header
       className={isNavExpanded ? "cabecalho cabecalhoExpandido" : "cabecalho"}

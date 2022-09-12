@@ -1,6 +1,8 @@
 footer {
-  background-color: black;
-  color: white;
+  /*   background-color: black;
+  color: white; */
+  background-color: #88e7cf;
+  color: black;
   text-align: center;
   padding: 2vh 0;
   display: flex;
@@ -36,5 +38,11 @@ footer {
 @media screen and (max-width: 420px) {
   .tamanho {
     padding: 8vh 0 25vh 0;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .tamanho {
+    padding: 8vh 0 30vh 0;
   }
 }

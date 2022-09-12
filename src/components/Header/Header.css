@@ -39,10 +39,13 @@ header {
 .bar {
   height: 5px;
   width: 100%;
-  background-color: blue;
+  background-color: orange;
   border-radius: 5px;
   transition: 0.3s ease;
   margin: 2px 0 2px 0px;
+}
+.hamburguer:hover > .bar {
+  background-color: red;
 }
 
 @media screen and (max-width: 540px) {
@@ -76,7 +79,7 @@ header {
     flex-direction: column;
     width: 50%;
     height: 230px;
-    background-color: rgb(78, 78, 78);
+    background-color: black;
     border-radius: 0 50px 50px 10px;
     transition: all 0.7s ease-in-out;
     padding-top: 50px;
